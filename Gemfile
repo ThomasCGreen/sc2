@@ -5,7 +5,6 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
 
 gem 'activeadmin'
 
@@ -28,13 +27,15 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
+  gem 'pg'
+
 end
 
 gem 'delayed_job_active_record'
 
 gem 'unicorn'
 
-group :production do
+group :production, :staging do
   gem 'mysql2'
 end
 
