@@ -22,6 +22,10 @@ production:
   host: localhost
 
 staging:
-  adapter: mysql
-  database: prelaunchr
+  adapter: mysql2
+  encoding: utf8
+  database: smallcannabis_staging
+  username: <%= ENV['SMALL_CANNABIS_DB_USER'] %>
+  password: <%= ENV['SMALL_CANNABIS_DB_PASSWORD'] %>
   host: localhost
+  port: 3306
