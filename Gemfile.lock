@@ -113,6 +113,7 @@ GEM
     method_source (0.8.2)
     mime-types (1.21)
     multi_json (1.6.1)
+    mysql2 (0.3.16)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
@@ -195,6 +196,7 @@ DEPENDENCIES
   capistrano-rvm
   coffee-rails (~> 3.2.1)
   delayed_job_active_record
+  mysql2
   pg
   pry
   rails (= 3.2.11)
