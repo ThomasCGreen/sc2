@@ -16,7 +16,7 @@ class UsersController < ApplicationController
         # Get user to see if they have already signed up
         @user = User.find_by_email(params[:user][:email]);
             
-        # If user doesnt exist, make them, and attach referrer
+        # If user doesn't exist, make them, and attach referrer
         if @user.nil?
 
             cur_ip = IpAddress.find_by_address(request.env['HTTP_X_FORWARDED_FOR'])
