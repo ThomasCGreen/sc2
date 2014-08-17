@@ -12,6 +12,7 @@ set :stages, ['staging', 'production']
 
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/home/reversg3/public_html/staging-smallcannabis'
+set :tmp_dir, '/home/reversg3/tmp'
 
 # Default value for :scm is :git
 set :scm, :git
@@ -37,6 +38,7 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 
 # Default value for keep_releases is 5
 set :keep_releases, 5
+set :rvm_ruby_version, '2.1.2@sc'
 
 namespace :deploy do
 
