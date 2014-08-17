@@ -3,16 +3,16 @@ lock '3.2.1'
 
 set :application, 'SmallCannabis'
 set :repo_url, 'git@github.com:ThomasCGreen/prelaunchr.git'
-set :user, "reversg3"
+# set :user, 'reversg3'
 
-set :stages, ['staging', 'production']
+# set :stages, ['staging', 'production']
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/reversg3/public_html/staging-smallcannabis'
-set :tmp_dir, '/home/reversg3/tmp'
+# set :deploy_to, '/home/reversg3/public_html/staging-smallcannabis'
+set :tmp_dir, '/home/reversg3/tmp/smallcannabis'
 
 # Default value for :scm is :git
 set :scm, :git
@@ -38,7 +38,7 @@ set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public
 
 # Default value for keep_releases is 5
 set :keep_releases, 5
-set :rvm_ruby_version, '2.1.2@sc'
+# set :rvm_ruby_version, '2.1.2@sc'
 
 namespace :deploy do
 

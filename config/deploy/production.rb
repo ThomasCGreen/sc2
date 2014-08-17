@@ -6,9 +6,9 @@
 
 set :stage, :production
 
-role :app, %w{root@signup-smallcannabils.org}
-role :web, %w{root@signup-smallcannabils.org}
-role :db,  %w{root@signup-smallcannabils.org}
+# role :app, %w{root@signup-smallcannabis.org}
+# role :web, %w{root@signup-smallcannabis.org}
+# role :db,  %w{root@signup-smallcannabis.org}
 
 
 # Extended Server Syntax

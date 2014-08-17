@@ -6,9 +6,9 @@
 
 set :stage, :staging
 
-role :app, %w{root@signup-smallcannabils.org}
-role :web, %w{root@signup-smallcannabils.org}
-role :db,  %w{root@signup-smallcannabils.org}
+# role :app, %w{root@staging.smallcannabis.org}
+# role :web, %w{root@staging.smallcannabis.org}
+# role :db,  %w{root@staging.smallcannabis.org}
 
 
 # Extended Server Syntax
@@ -17,8 +17,8 @@ role :db,  %w{root@signup-smallcannabils.org}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'staging.smallcannabis.org', roles: %w{web app db}, :primary => true
-set :deploy_to '/home/reversg3/public_html/staging-smallcannabis'
+server 'staging.smallcannabis.org', user: 'reversg3', roles: %w{web app db}, :primary => true
+set :deploy_to, '/home/reversg3/public_html/staging-smallcannabis'
 
 
 # Custom SSH Options
