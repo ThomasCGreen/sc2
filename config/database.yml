@@ -21,7 +21,7 @@ production:
   database: prelaunchr
   host: localhost
 
-production:
+staging:
   adapter: mysql
   database: prelaunchr
   host: localhost
