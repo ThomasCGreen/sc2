@@ -5,7 +5,8 @@ set :application, 'SmallCannabis'
 set :repo_url, 'git@github.com:ThomasCGreen/prelaunchr.git'
 # set :user, 'reversg3'
 
-set :stages, ['staging', 'production']
+set :stages, %w{staging production}
+set :default_stage, 'staging'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
