@@ -19,7 +19,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: reversg3_produciton_sc
+  database: reversg3_production_sc
   username: <%= ENV['SMALL_CANNABIS_DB_USER'] %>
   password: <%= ENV['SMALL_CANNABIS_DB_PASSWORD'] %>
   host: localhost
