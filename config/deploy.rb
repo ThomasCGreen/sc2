@@ -17,6 +17,7 @@ set :tmp_dir, '/home/reversg3/tmp/smallcannabis'
 
 # Default value for :scm is :git
 set :scm, :git
+set :branch, ENV['BRANCH'] || 'master'
 
 # Default value for :format is :pretty
 set :format, :pretty
