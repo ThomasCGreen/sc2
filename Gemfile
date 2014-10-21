@@ -5,7 +5,6 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
 
 gem 'activeadmin'
 
@@ -24,11 +23,21 @@ end
 
 group :development do
   gem 'pry'
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler'
+  gem 'pg'
+
 end
 
 gem 'delayed_job_active_record'
 
 gem 'unicorn'
+
+group :production, :staging do
+  gem 'mysql2'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
